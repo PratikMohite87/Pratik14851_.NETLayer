@@ -1,0 +1,16 @@
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\bin\Debug\net5.0\TypeDemoApp.exe
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\bin\Debug\net5.0\TypeDemoApp.deps.json
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\bin\Debug\net5.0\TypeDemoApp.runtimeconfig.json
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\bin\Debug\net5.0\TypeDemoApp.runtimeconfig.dev.json
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\bin\Debug\net5.0\TypeDemoApp.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\bin\Debug\net5.0\ref\TypeDemoApp.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\bin\Debug\net5.0\TypeDemoApp.pdb
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\obj\Debug\net5.0\TypeDemoApp.csprojAssemblyReference.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\obj\Debug\net5.0\TypeDemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\obj\Debug\net5.0\TypeDemoApp.AssemblyInfoInputs.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\obj\Debug\net5.0\TypeDemoApp.AssemblyInfo.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\obj\Debug\net5.0\TypeDemoApp.csproj.CoreCompileInputs.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\obj\Debug\net5.0\TypeDemoApp.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\obj\Debug\net5.0\ref\TypeDemoApp.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\obj\Debug\net5.0\TypeDemoApp.pdb
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\TypeDemoApp\TypeDemoApp\obj\Debug\net5.0\TypeDemoApp.genruntimeconfig.cache
