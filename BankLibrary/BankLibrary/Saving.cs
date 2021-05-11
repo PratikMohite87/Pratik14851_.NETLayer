@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace BankLibrary
 {
-    public class Saving : Bank
+    public class Saving : Bank, IInterest
     {
         public Saving()
         { }
 
         public Saving(string name, int amount) : base(name, amount)     // invoking parent class parmeterized constructor.
         { }
+
+        public double CalculateInterest()
+        {
+            throw new NotImplementedException();
+        }
 
         public override void Withdraw(int amount)
         {

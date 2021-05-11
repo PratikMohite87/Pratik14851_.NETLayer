@@ -2,7 +2,7 @@
 
 namespace BankLibrary
 {
-    public class Bank
+    public abstract class Bank
     {
         private string accountHoldrName;    // field
 
@@ -35,10 +35,12 @@ namespace BankLibrary
             balance += amount;
         }
 
-        public virtual void Withdraw(int amount)    // now this method is available for overriding.
-        {
-            balance -= amount;
-        }
+        public abstract void Withdraw(int amount);
+
+        //public virtual void Withdraw(int amount)    // now this method is available for overriding.
+        //{
+            //balance -= amount;
+        //}
 
         static Bank()   // static constructor for initializing static members
         {

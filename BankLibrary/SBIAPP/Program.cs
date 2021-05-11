@@ -16,14 +16,24 @@ namespace SBIApp
 
             //Console.WriteLine(Bank.Counter);
 
-            Saving s1 = new Saving("pratik", 1000);
+            /*Saving s1 = new Saving("pratik", 1000);
             Console.WriteLine(s1.ToString());
 
             try
             {
-                s1.Withdraw(500000);
+                s1.Withdraw(500000);  
             }
             catch (BalanceException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }*/
+
+            Current c1 = new Current();
+            try
+            {
+                c1.Withdraw(0);
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
