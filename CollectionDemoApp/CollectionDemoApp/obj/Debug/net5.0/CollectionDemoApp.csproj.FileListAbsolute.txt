@@ -1,0 +1,16 @@
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\bin\Debug\net5.0\CollectionDemoApp.exe
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\bin\Debug\net5.0\CollectionDemoApp.deps.json
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\bin\Debug\net5.0\CollectionDemoApp.runtimeconfig.json
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\bin\Debug\net5.0\CollectionDemoApp.runtimeconfig.dev.json
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\bin\Debug\net5.0\CollectionDemoApp.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\bin\Debug\net5.0\ref\CollectionDemoApp.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\bin\Debug\net5.0\CollectionDemoApp.pdb
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\obj\Debug\net5.0\CollectionDemoApp.csprojAssemblyReference.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\obj\Debug\net5.0\CollectionDemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\obj\Debug\net5.0\CollectionDemoApp.AssemblyInfoInputs.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\obj\Debug\net5.0\CollectionDemoApp.AssemblyInfo.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\obj\Debug\net5.0\CollectionDemoApp.csproj.CoreCompileInputs.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\obj\Debug\net5.0\CollectionDemoApp.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\obj\Debug\net5.0\ref\CollectionDemoApp.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\obj\Debug\net5.0\CollectionDemoApp.pdb
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\CollectionDemoApp\CollectionDemoApp\obj\Debug\net5.0\CollectionDemoApp.genruntimeconfig.cache
