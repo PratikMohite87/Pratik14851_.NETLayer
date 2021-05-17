@@ -1,0 +1,12 @@
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\bin\Debug\net5.0\DataAccessLayerLib.deps.json
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\bin\Debug\net5.0\DataAccessLayerLib.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\bin\Debug\net5.0\ref\DataAccessLayerLib.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\bin\Debug\net5.0\DataAccessLayerLib.pdb
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\obj\Debug\net5.0\DataAccessLayerLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\obj\Debug\net5.0\DataAccessLayerLib.AssemblyInfoInputs.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\obj\Debug\net5.0\DataAccessLayerLib.AssemblyInfo.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\obj\Debug\net5.0\DataAccessLayerLib.csproj.CoreCompileInputs.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\obj\Debug\net5.0\DataAccessLayerLib.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\obj\Debug\net5.0\ref\DataAccessLayerLib.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\obj\Debug\net5.0\DataAccessLayerLib.pdb
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\DataAccessLayerDemo\DataAccessLayerLibrary\obj\Debug\net5.0\DataAccessLayerLib.csprojAssemblyReference.cache
