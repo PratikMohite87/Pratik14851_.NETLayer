@@ -94,6 +94,7 @@ namespace LINQDemo
             */
             #endregion
 
+            /*
             var emp = from e in empList
                       where e.Salary > 1000
                       select new { e.EmpName, job = e.Department, e.Salary };
@@ -102,6 +103,94 @@ namespace LINQDemo
 
             foreach (var item in emp)
                 Console.WriteLine(item.EmpName+" "+item.job+" "+item.Salary+" "+item.GetType().Name);
+            */
+
+            /*
+            IEnumerable<Employee> eventData = from emp in empList
+                                              orderby emp.Department
+                                              select emp;
+
+            IEnumerable<Employee> eventData2 = empList.OrderBy(emp => emp.Department);
+
+            IEnumerable<Employee> eventData3 = from emp in empList
+                                               orderby emp.Department, emp.Salary descending
+                                               select emp;
+
+            IEnumerable<Employee> eventData4 = empList.OrderBy(emp => emp.Department).ThenByDescending(emp => emp.Salary);
+
+            foreach (Employee emp in eventData4)
+                Console.WriteLine(emp);
+            */
+
+            #region Distinct
+            /*
+            IEnumerable<string> deptnames = (from e in empList
+                                             select e.Department).Distinct();
+
+            foreach (string item in deptnames)
+            {
+                Console.WriteLine(item);
+            }
+            */
+            #endregion
+
+            #region Groupby
+            /*
+            var query9 = from e in empList group e by e.Department;
+            foreach (var item in query9)
+            {
+                Console.WriteLine(item.Key);
+
+                foreach (var subitem in item)
+                {
+                    Console.WriteLine(subitem.EmpName+" "+subitem.Address+" "+subitem.Salary );
+                }
+            }
+            */
+            #endregion
+
+            #region Aggregate Functions
+            /*
+            decimal totalSalary = (from e in empList
+                                   select e).Sum(e => e.Salary);
+            Console.WriteLine(totalSalary);
+
+            decimal minSalary = (from e in empList
+                                 select e).Min(e => e.Salary);
+            Console.WriteLine(minSalary);
+
+            decimal maxSalary = (from e in empList
+                                 select e).Max(e => e.Salary);
+            Console.WriteLine(maxSalary);
+
+            decimal avgSalary = (from e in empList
+                                 select e).Average(e => e.Salary);
+            Console.WriteLine(avgSalary);
+            */
+            #endregion
+
+            var query = from e in empList
+                        group e by e.Department into empgrp
+                        select new { dept = empgrp.Key, salsum = empgrp.Sum(e => e.Salary) };
+
+            var query2 = empList.GroupBy(e => e.Department).Select(g => new { dept = g.Key, salsum = g.Sum(g => g.Salary) });
+
+            var query3 = empList.GroupBy(e => new { e.Department, e.Address });
+
+            /*foreach (var item in query2)
+                Console.WriteLine(item.dept+" "+item.salsum);*/
+
+            foreach (var item in query3)
+            {
+                Console.WriteLine(item.Key.Department+" "+item.Key.Address);
+
+                foreach (var item2 in item)
+                {
+                    Console.WriteLine(item2.ToString());
+                }
+
+               
+            }
 
             #endregion
         }
