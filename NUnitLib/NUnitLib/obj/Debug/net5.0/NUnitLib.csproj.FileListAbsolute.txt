@@ -1,0 +1,12 @@
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\bin\Debug\net5.0\NUnitLib.deps.json
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\bin\Debug\net5.0\NUnitLib.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\bin\Debug\net5.0\ref\NUnitLib.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\bin\Debug\net5.0\NUnitLib.pdb
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\obj\Debug\net5.0\NUnitLib.csprojAssemblyReference.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\obj\Debug\net5.0\NUnitLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\obj\Debug\net5.0\NUnitLib.AssemblyInfoInputs.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\obj\Debug\net5.0\NUnitLib.AssemblyInfo.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\obj\Debug\net5.0\NUnitLib.csproj.CoreCompileInputs.cache
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\obj\Debug\net5.0\NUnitLib.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\obj\Debug\net5.0\ref\NUnitLib.dll
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\NUnitLib\NUnitLib\obj\Debug\net5.0\NUnitLib.pdb
