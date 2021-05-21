@@ -1,0 +1,29 @@
+﻿@model Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EmployeeForm</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body>
+
+    <form asp-controller="Home" asp-action="DisplayEmployeeData" method="post">
+
+        EmpId: <input type="text" asp-for="EmployeeId"/><span asp-validation-for="EmployeeId" class="alert-danger"></span><br />
+        EmpName: <input type="text" asp-for="EmployeeName" /><span asp-validation-for="EmployeeName" class="alert-danger"></span><br />
+        EmpSalary: <input type="text" asp-for="EmployeeSal" /><span asp-validation-for="EmployeeSal" class="alert-danger"></span><br />
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
