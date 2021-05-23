@@ -1,0 +1,16 @@
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\bin\Debug\net5.0\InBuiltDelegates.exe
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\bin\Debug\net5.0\InBuiltDelegates.deps.json
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\bin\Debug\net5.0\InBuiltDelegates.runtimeconfig.json
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\bin\Debug\net5.0\InBuiltDelegates.runtimeconfig.dev.json
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\bin\Debug\net5.0\InBuiltDelegates.dll
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\bin\Debug\net5.0\ref\InBuiltDelegates.dll
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\bin\Debug\net5.0\InBuiltDelegates.pdb
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\obj\Debug\net5.0\InBuiltDelegates.csprojAssemblyReference.cache
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\obj\Debug\net5.0\InBuiltDelegates.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\obj\Debug\net5.0\InBuiltDelegates.AssemblyInfoInputs.cache
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\obj\Debug\net5.0\InBuiltDelegates.AssemblyInfo.cs
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\obj\Debug\net5.0\InBuiltDelegates.csproj.CoreCompileInputs.cache
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\obj\Debug\net5.0\InBuiltDelegates.dll
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\obj\Debug\net5.0\ref\InBuiltDelegates.dll
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\obj\Debug\net5.0\InBuiltDelegates.pdb
+C:\Users\Pratik14851\Documents\.NET\LearningApp\InBuiltDelegates\obj\Debug\net5.0\InBuiltDelegates.genruntimeconfig.cache
