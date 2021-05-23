@@ -36,9 +36,30 @@ namespace InBuiltDelegates
             */
             #endregion
 
+            /*
             Class1 class1 = new Class1();
             class1.Ac = EventHandler;
             class1.Number = 0;
+            */
+
+            #region Anonymous
+            Func<string, string, string> anonymous = delegate (string firstName, string lastName)
+            {
+                return firstName + lastName;
+            };
+
+            Console.WriteLine(anonymous("Pratik", "Mohite"));
+            #endregion
+
+            #region Lambda
+
+            Func<int, int> lambda = (int a) =>
+            {
+                return a;
+            };
+
+            Console.WriteLine(lambda(1));
+            #endregion
 
 
         }
