@@ -24,6 +24,11 @@ namespace MVCWebApp1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddSession();    // enabling session service
+            /*services.AddSession(options => {
+
+                options.IdleTimeout = TimeSpan.FromSeconds(5);      // session data will exist for only 5 seconds.
+            });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +48,8 @@ namespace MVCWebApp1
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSession();
 
             app.UseAuthorization();
 

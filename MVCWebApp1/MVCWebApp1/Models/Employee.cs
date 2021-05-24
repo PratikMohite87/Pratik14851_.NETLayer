@@ -12,7 +12,7 @@ namespace MVCWebApp1.Models
         [RegularExpression(@"[0-9]{4}", ErrorMessage ="Enter 4 digit employee id")]
         public int EmployeeId { set; get; }
 
-        [Required(ErrorMessage ="Fiel is compulsory")]
+        [Required(ErrorMessage ="Field is compulsory")]
         [StringLength(10, ErrorMessage ="Max length should be 10 characters")]
         public string EmployeeName { set; get; }
 

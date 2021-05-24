@@ -1,16 +1,28 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using MVCWebApp1.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace MVCWebApp1.Controllers
 {
     public class DataPersistentController : Controller
     {
+
+        public IConfiguration Configuration { get; }
+
+        public DataPersistentController(IConfiguration _configuration)
+        {
+            Configuration = _configuration;
+        }
+
         public IActionResult Index()
         {
+            ViewBag.data = Configuration["CustomerKey"];
             return View();
         }
 
@@ -48,6 +60,38 @@ namespace MVCWebApp1.Controllers
 
             if (string.IsNullOrEmpty(ViewBag.color))
                 ViewBag.color = "Black";
+
+            return View();
+        }
+
+        public IActionResult SessionDemo()
+        {
+            HttpContext.Session.SetString("message", "Session text");
+            HttpContext.Session.SetInt32("count", 5);
+
+            HttpContext.Session.SetString("dateObj", JsonSerializer.Serialize(DateTime.Now));
+
+            Employee employee = new Employee
+            {
+                EmployeeId = 101,
+                EmployeeName = "Pratik",
+                EmployeeSal = 10000
+            };
+
+            HttpContext.Session.SetString("employee", JsonSerializer.Serialize(employee));
+
+            return RedirectToAction("GetSession");
+        }
+
+        public IActionResult GetSession()
+        {
+            ViewBag.message = HttpContext.Session.GetString("message");
+            ViewBag.count = HttpContext.Session.GetInt32("count");
+
+            var dateObj = HttpContext.Session.GetString("dateObj");
+            ViewBag.date = JsonSerializer.Deserialize<DateTime>(dateObj);
+
+            ViewBag.employee = JsonSerializer.Deserialize<Employee>(HttpContext.Session.GetString("employee"));
 
             return View();
         }

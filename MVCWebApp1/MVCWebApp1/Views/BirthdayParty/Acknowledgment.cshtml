@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Acknowledgment";
+    Guest guest = ViewBag.guest;
+}
+
+<div>
+    <h3>
+        Thankyou @guest.GuestName for your response.
+    </h3>
+    
+    @{ 
+        if (guest.GuestDecision == "yes")
+        {
+            @:<h6 class="text-success">Thankyou for coming</h6>
+        }
+        else
+        {
+            @:<h6 class="text-danger">We will miss you</h6>
+        }
+    }
+</div>
+

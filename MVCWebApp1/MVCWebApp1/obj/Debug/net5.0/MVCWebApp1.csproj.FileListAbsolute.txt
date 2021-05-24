@@ -122,3 +122,7 @@ C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj
 C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\Home\DisplayEmployeeData.cshtml.g.cs
 C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\DataPersistent\Index.cshtml.g.cs
 C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\DataPersistent\ReadCookies.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\DataPersistent\GetSession.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\BirthdayParty\Index.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\BirthdayParty\RegistrationForm.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\BirthdayParty\Acknowledgment.cshtml.g.cs
