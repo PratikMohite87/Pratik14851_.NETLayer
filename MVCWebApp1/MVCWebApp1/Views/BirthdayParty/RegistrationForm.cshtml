@@ -17,7 +17,7 @@
 </div>
 
 <div class="row">
-    <div class="col-4 bg-dark"></div>
+    <div class="col-4"></div>
     <div class="col-4">
         <form asp-controller="BirthdayParty" asp-action="Acknowledgment" method="post">
             <div class="form-group">
@@ -37,7 +37,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="GuestDecision">Coming:</label>
-                <select type="text" class="form-control" asp-for="GuestDecision" placeholder="Choose">
+                <select type="text" class="form-control" asp-for="GuestDecision">
+                    <option selected></option>
                     <option value="yes">Yes, I am Coming</option>
                     <option value="no">No, I am not coming</option>
                 </select>
@@ -46,6 +47,6 @@
             <button class="btn btn-primary" type="submit">Submit</button>
         </form>
     </div>
-    <div class="col-4 bg-dark"></div>
+    <div class="col-4"></div>
 </div>
 

@@ -17,7 +17,7 @@ namespace MVCWebApp1.Models
         public string GuestEmail { set; get; }
 
         [Required(ErrorMessage = "Phone is required")]
-        [Phone(ErrorMessage ="Not valid phone no")]
+        [RegularExpression(@"^(\d{10})$", ErrorMessage ="Invalid Phone no.")]
         public string GuestPhone { set; get; }
 
         [Required(ErrorMessage = "Decision is required")]
