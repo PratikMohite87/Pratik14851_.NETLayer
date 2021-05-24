@@ -1,0 +1,16 @@
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\bin\Debug\net5.0\LearningApp.exe
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\bin\Debug\net5.0\LearningApp.deps.json
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\bin\Debug\net5.0\LearningApp.runtimeconfig.json
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\bin\Debug\net5.0\LearningApp.runtimeconfig.dev.json
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\bin\Debug\net5.0\LearningApp.dll
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\bin\Debug\net5.0\ref\LearningApp.dll
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\bin\Debug\net5.0\LearningApp.pdb
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\obj\Debug\net5.0\LearningApp.csprojAssemblyReference.cache
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\obj\Debug\net5.0\LearningApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\obj\Debug\net5.0\LearningApp.AssemblyInfoInputs.cache
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\obj\Debug\net5.0\LearningApp.AssemblyInfo.cs
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\obj\Debug\net5.0\LearningApp.csproj.CoreCompileInputs.cache
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\obj\Debug\net5.0\LearningApp.dll
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\obj\Debug\net5.0\ref\LearningApp.dll
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\obj\Debug\net5.0\LearningApp.pdb
+C:\Users\Pratik14851\Documents\.NET\Delgates\LearningApp\obj\Debug\net5.0\LearningApp.genruntimeconfig.cache
