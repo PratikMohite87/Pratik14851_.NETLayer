@@ -2,6 +2,7 @@ using DataAccessLayerLib;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -39,6 +40,8 @@ namespace MVCWebApp1
             services.AddSingleton<ISingletonService, OperationService>();
 
             services.AddScoped<EmpDataStore>();
+
+            services.AddDbContext<MastekTrainingContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MyDBConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Emp>
+﻿@model IEnumerable<DataAccessLayerLib.Emp>
 
 @{
     ViewData["Title"] = "Index";
@@ -14,7 +14,7 @@
         <th>Sal</th>
     </tr>
     @{ 
-        foreach(Emp emp in Model)
+        foreach(DataAccessLayerLib.Emp emp in Model)
         {
             <tr>
                 <td>@emp.EmpNo</td>
