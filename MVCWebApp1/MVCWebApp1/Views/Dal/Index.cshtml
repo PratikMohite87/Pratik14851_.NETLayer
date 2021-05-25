@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Emp>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table>
+    <tr>
+        <th>EmpNo</th>
+        <th>EmpName</th>
+        <th>Hiredate</th>
+        <th>Sal</th>
+    </tr>
+    @{ 
+        foreach(Emp emp in Model)
+        {
+            <tr>
+                <td>@emp.EmpNo</td>
+                <td>@emp.EmpName</td>
+                <td>@emp.HireDate</td>
+                <td>@emp.Salary</td>
+            </tr>
+        }
+    }
+
+</table>
+

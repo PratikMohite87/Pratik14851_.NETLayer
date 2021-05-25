@@ -1,8 +1,9 @@
-﻿@model Guest 
+﻿@model Guest
 
 @{
     ViewData["Title"] = "RegistrationForm";
 }
+
 
 <div class="row">
     <div class="col-4">
@@ -22,17 +23,17 @@
         <form asp-controller="BirthdayParty" asp-action="Acknowledgment" method="post">
             <div class="form-group">
                 <label asp-for="GuestName">Name:</label>
-                <input type="text" class="form-control" asp-for="GuestName"/>
+                <input type="text" class="form-control" asp-for="GuestName" />
                 <span asp-validation-for="GuestName" class="alert-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="GuestEmail">Email:</label>
-                <input type="text" class="form-control" asp-for="GuestEmail"/>
+                <input type="text" class="form-control" asp-for="GuestEmail" />
                 <span asp-validation-for="GuestEmail" class="alert-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="GuestPhone">Phone:</label>
-                <input type="text" class="form-control" asp-for="GuestPhone"/>
+                <input type="text" class="form-control" asp-for="GuestPhone" />
                 <span asp-validation-for="GuestPhone" class="alert-danger"></span>
             </div>
             <div class="form-group">

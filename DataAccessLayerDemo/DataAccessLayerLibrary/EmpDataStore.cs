@@ -13,7 +13,14 @@ namespace DataAccessLayerLib
         SqlCommand command;
         SqlDataReader reader;
 
+        public EmpDataStore() { }
+
         public EmpDataStore(string connectionString)
+        {
+            connection = new SqlConnection(connectionString);
+        }
+
+        public void SetConnection(string connectionString)
         {
             connection = new SqlConnection(connectionString);
         }
