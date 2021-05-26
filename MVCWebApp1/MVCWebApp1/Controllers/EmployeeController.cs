@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVCWebApp1.Models;
+using MVCWebApp1.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +16,21 @@ namespace MVCWebApp1.Controllers
         {
             mastekTrainingContext = context;
         }
-        public IActionResult Index()
+        //public IActionResult Index()
+        //{
+        //    return View(mastekTrainingContext.Emps.ToList());
+        //}
+
+        public IActionResult Index(string search)
         {
-            return View(mastekTrainingContext.Emps.ToList());
+            var emps = from e in mastekTrainingContext.Emps select e;
+
+            if (!String.IsNullOrEmpty(search))
+            {
+                emps = emps.Where(e => e.Ename.ToUpper().Contains(search.ToUpper()));
+            }
+
+            return View(emps.ToList());
         }
 
         public IActionResult Details(int id)
@@ -130,6 +143,17 @@ namespace MVCWebApp1.Controllers
                 return RedirectToAction("Index");
             }
             return View(emp);
+        }
+
+        public IActionResult EmpDeptData()
+        {
+            IEnumerable<EmptDeptViewModel> data = (from e in mastekTrainingContext.Emps.DefaultIfEmpty()
+                                                   join d in mastekTrainingContext.Depts
+                                                   on e.Deptno equals d.Deptno into ed
+                                                   from de in ed.DefaultIfEmpty()
+                                                   select new EmptDeptViewModel { Emp = e, Dept = de }).ToList();
+
+            return View(data);
         }
     }
 }

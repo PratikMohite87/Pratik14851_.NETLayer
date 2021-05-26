@@ -161,3 +161,9 @@ C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj
 C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\Employee\Create.cshtml.g.cs
 C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\Employee\Delete.cshtml.g.cs
 C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\Employee\Edit.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\Depts\Create.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\Depts\Delete.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\Depts\Details.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\Depts\Edit.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\Depts\Index.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\MVCWebApp1\MVCWebApp1\obj\Debug\net5.0\Razor\Views\Employee\EmpDeptData.cshtml.g.cs

@@ -1,0 +1,31 @@
+﻿@using MVCWebApp1.ViewModels
+@model IEnumerable<EmptDeptViewModel>
+@{
+    ViewData["Title"] = "EmpDeptData";
+}
+
+<h1>EmpDeptData</h1>
+
+<table>
+    <tr>
+        <th>Employee No</th>
+        <th>Employee Name</th>
+        <th>Employee Job</th>
+        <th>Employee Salary</th>
+        <th>Employee yEARS</th>
+        <th>Department Name</th>
+        <th>Department Location</th>
+    </tr>
+    @foreach (EmptDeptViewModel data in Model)
+    {
+        <tr>
+            <td>@data.Emp.Empno</td>
+            <td>@data.Emp.Ename</td>
+            <td>@data.Emp.Job</td>
+            <td style="color:@data.SalaryColor">@data.Emp.Sal</td>
+            <td>@data.Years</td>
+            <td>@data.Dept.Dname</td>
+            <td>@data.Dept.Loc</td>
+        </tr>
+    }
+</table>
