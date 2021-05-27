@@ -30,7 +30,26 @@ namespace SecurityDemoApp_2
 
             services.AddDbContext<MyIdentityDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<MyIdentityUser, MyIdentityRole>().AddEntityFrameworkStores<MyIdentityDbContext>().AddDefaultTokenProviders();
+            //services.AddIdentity<MyIdentityUser, MyIdentityRole>().AddEntityFrameworkStores<MyIdentityDbContext>().AddDefaultTokenProviders();
+
+            services.AddIdentity<MyIdentityUser, MyIdentityRole>(options => {
+
+                options.SignIn.RequireConfirmedEmail = false;
+                options.User.RequireUniqueEmail = false;
+
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 3;
+                options.Password.RequiredUniqueChars = 0;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+
+                options.Lockout.MaxFailedAccessAttempts = 3;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(1);       // default is 5 min
+
+                options.User.RequireUniqueEmail = false;
+
+            }).AddEntityFrameworkStores<MyIdentityDbContext>().AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

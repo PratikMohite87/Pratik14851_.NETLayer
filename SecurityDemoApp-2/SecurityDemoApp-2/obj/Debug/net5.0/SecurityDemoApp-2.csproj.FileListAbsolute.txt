@@ -150,3 +150,5 @@ C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\SecurityDemoApp-2\Securit
 C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\SecurityDemoApp-2\SecurityDemoApp-2\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\SecurityDemoApp-2\SecurityDemoApp-2\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\SecurityDemoApp-2\SecurityDemoApp-2\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\SecurityDemoApp-2\SecurityDemoApp-2\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Pratik\Documents\MASTEK\Pratik14851_.NETLayer\SecurityDemoApp-2\SecurityDemoApp-2\obj\Debug\net5.0\Razor\Views\Home\OnlyAdminAccesss.cshtml.g.cs

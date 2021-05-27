@@ -23,10 +23,38 @@ namespace SecurityDemoApp_2.Controllers
             this.userManager = userManager;
             this.signInManager = signInManager;
             this.roleManager = roleManager;
+
+            AddAdmin();
         }
         public IActionResult Index()
         {
             return View();
+        }
+
+        private void AddAdmin()
+        {
+            if (!roleManager.RoleExistsAsync("admin").Result)
+            {
+                MyIdentityRole role = new MyIdentityRole();
+                role.Name = "admin";
+                role.Description = "Administer Website";
+
+                IdentityResult roleResult = roleManager.CreateAsync(role).Result;
+
+                if (!roleResult.Succeeded)
+                    ModelState.AddModelError("", "Error while creating role");
+                else
+                {
+                    MyIdentityUser user = new MyIdentityUser();
+                    user.UserName = "admin";
+                    user.Email = "admin@test.com";
+                    user.FullName = "site admin";
+
+                    IdentityResult result = userManager.CreateAsync(user, "test12").Result;
+
+                    userManager.AddToRoleAsync(user, "admin").Wait();
+                }
+            }
         }
 
         [HttpGet]
@@ -87,6 +115,42 @@ namespace SecurityDemoApp_2.Controllers
             }
            
             return View(obj);
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(LoginViewModel obj)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = signInManager.PasswordSignInAsync(obj.UserName, obj.Password, obj.RememberMe, true).Result;
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");       // valid user
+                }
+
+                if (result.IsLockedOut)
+                {
+                    ModelState.AddModelError("", "Account is locked");
+                }
+
+                ModelState.AddModelError("", "Invalid Login !");
+            }
+
+            return View(obj);       // failing server side validation.
+        }
+
+        public IActionResult LogOff()
+        {
+            signInManager.SignOutAsync().Wait();
+
+            return RedirectToAction("Login","Account");
         }
     }
 }
