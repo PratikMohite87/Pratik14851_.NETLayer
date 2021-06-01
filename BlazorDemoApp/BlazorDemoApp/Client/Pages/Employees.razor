@@ -48,7 +48,7 @@
     </div>
     <div class="col-lg-4">
         @*add form design for Add Employee *@
-        <AddEmployee></AddEmployee>
+        <AddEmployee OnSubmitCallBack="@Refresh"></AddEmployee>
     </div>
 </div>
 
@@ -58,8 +58,22 @@
 
     protected async override Task OnInitializedAsync()
     {
+        //employees = await Http.GetFromJsonAsync<EmployeeModel[]>("api/Employee");
+
+        //StateHasChanged();
+
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
         employees = await Http.GetFromJsonAsync<EmployeeModel[]>("api/Employee");
 
         StateHasChanged();
+    }
+
+    public async void Refresh()
+    {
+        await LoadData();
     }
 }

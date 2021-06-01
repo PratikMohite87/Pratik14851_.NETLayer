@@ -7,7 +7,7 @@
         Add an Employee
     </div>
     <div class="card-body">
-        <EditForm Model="@employeeModel" >
+        <EditForm Model="@employeeModel" OnValidSubmit="HandleValidSubmit" >
             <DataAnnotationsValidator></DataAnnotationsValidator>
             <ValidationSummary></ValidationSummary>
 
@@ -41,8 +41,13 @@
 @code {
     private EmployeeModel employeeModel = new EmployeeModel() { HireDate = DateTime.Today };
 
+    [Parameter]
+    public EventCallback OnSubmitCallBack { set; get; }
+
     public async Task HandleValidSubmit()
     {
         await Http.PostAsJsonAsync<EmployeeModel>("api/Employee", employeeModel);
+        await OnSubmitCallBack.InvokeAsync();
     }
+
 }
