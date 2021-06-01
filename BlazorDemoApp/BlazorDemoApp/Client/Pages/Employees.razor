@@ -1,0 +1,65 @@
+﻿@page "/employees"
+
+@inject HttpClient Http;
+
+@using BlazorDemoApp.Shared
+@using BlazorDemoApp.Client.Components
+
+<h3>Employees</h3>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                Employee Data
+            </div>
+            <div class="card-body">
+                @*Display data in table*@
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>EmpNo</th>
+                            <th>EmpName</th>
+                            <th>HireDate</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (employees == null)
+                        {
+                            <tr><td><em>Loading...</em></td></tr>
+                        }
+                        else
+                        {
+                            @foreach (var employee in employees)
+                            {
+                                <tr>
+                                    <td>@employee.EmpNo.ToString()</td>
+                                    <td>@employee.EmpName</td>
+                                    <td>@employee.HireDate.ToString()</td>
+                                    <td>@employee.Salary.ToString()</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        @*add form design for Add Employee *@
+        <AddEmployee></AddEmployee>
+    </div>
+</div>
+
+@code {
+    // Bind property which we use in our desgin
+    private EmployeeModel[] employees;
+
+    protected async override Task OnInitializedAsync()
+    {
+        employees = await Http.GetFromJsonAsync<EmployeeModel[]>("api/Employee");
+
+        StateHasChanged();
+    }
+}

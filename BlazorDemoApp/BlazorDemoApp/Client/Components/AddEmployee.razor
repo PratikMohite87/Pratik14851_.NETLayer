@@ -1,0 +1,48 @@
+﻿@using BlazorDemoApp.Shared
+@inject HttpClient Http;
+<h3>AddEmployee</h3>
+
+<div class="card">
+    <div class="card-header">
+        Add an Employee
+    </div>
+    <div class="card-body">
+        <EditForm Model="@employeeModel" >
+            <DataAnnotationsValidator></DataAnnotationsValidator>
+            <ValidationSummary></ValidationSummary>
+
+            <div class="form-group">
+                <label for="empnoInput">EmpNo</label>
+                <InputNumber class="form-control" id="empnoInput" @bind-Value="employeeModel.EmpNo"></InputNumber>
+            </div>
+
+            <div class="form-group">
+                <label for="empnameInput">EmpName</label>
+                <InputNumber class="form-control" id="empnameInput" @bind-Value="employeeModel.EmpName"></InputNumber>
+            </div>
+
+            <div class="form-group">
+                <label for="dateInput">HireDate</label>
+                <InputNumber class="form-control" id="dateInput" @bind-Value="employeeModel.HireDate"></InputNumber>
+            </div>
+
+            <div class="form-group">
+                <label for="salaryInput">Salary</label>
+                <InputNumber class="form-control" id="salaryInput" @bind-Value="employeeModel.Salary"></InputNumber>
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private EmployeeModel employeeModel = new EmployeeModel() { HireDate = DateTime.Today };
+
+    public async Task HandleValidSubmit()
+    {
+        await Http.PostAsJsonAsync<EmployeeModel>("api/Employee", employeeModel);
+    }
+}

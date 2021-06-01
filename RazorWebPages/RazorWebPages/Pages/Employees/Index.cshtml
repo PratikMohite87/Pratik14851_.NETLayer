@@ -1,0 +1,29 @@
+﻿@page
+@model RazorWebPages.Pages.Employees.IndexModel
+@{
+}
+
+<h2>Employees</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Department</th>
+    </tr>
+    @foreach (var item in Model.Employees)
+    {
+        <tr>
+            <td>@item.Id</td
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Department</td>
+            <td>
+                <a asp-page="/Employees/Details" asp-route-Id="@item.Id">View</a>
+                <a asp-page="/Employees/Edit" asp-route-Id="@item.Id">Edit</a>
+                <a asp-page="/Employees/Delete" asp-route-Id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

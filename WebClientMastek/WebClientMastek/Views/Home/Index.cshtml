@@ -1,0 +1,203 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<div>
+    <h4>
+        Display Poduct
+    </h4>
+    <table id="productTable"></table>
+</div>
+
+    <table>
+        <tr>
+            <td> <label>Product Id : </label> </td>
+            <td> <input type="text" id="txtPid" /> </td>
+        </tr>
+        <tr>
+            <td> <label>Product Name : </label> </td>
+            <td> <input type="text" id="txtPName" /> </td>
+        </tr>
+        <tr>
+            <td> <label>Price : </label> </td>
+            <td> <input type="text" id="txtPrice" /> </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center">
+                <input type="button" value="Add Product" onclick="AddProduct();" />
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <h4>
+            One product
+        </h4>
+        <table id="product"></table>
+        <input type="text" id="textId" />
+        <button onclick="GetProduct();">GET</button>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <td> <label>Product Id : </label> </td>
+                <td> <input type="text" id="textPid" /> </td>
+            </tr>
+            <tr>
+                <td> <label>Product Name : </label> </td>
+                <td> <input type="text" id="textPName" /> </td>
+            </tr>
+            <tr>
+                <td> <label>Price : </label> </td>
+                <td> <input type="text" id="textPrice" /> </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center">
+                    <input type="button" value="Update Product" onclick="UpdateProduct();" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h3>
+            DeleteProduct
+        </h3>
+        <input type="text" id="textId2" />
+        <button onclick="DeleteProduct();">Delete</button>
+    </div>
+
+
+<script>
+    $(document).ready(LoadProductDetails());
+
+        function LoadProductDetails()
+        {
+            var url = "https://localhost:44321/api/product";
+
+            $.ajax({
+                url: url,
+                dataType: 'json',
+                type: 'GET',
+                success: function (data) {
+
+                    // clears table if data exists
+                    $('#productTable').empty();
+
+                    // add head row
+                    var headerrow = '<tr><th> ProductId </th> <th> ProductName </th> <th> Price </th> </tr>'
+
+                    $('#productTable').append(headerrow);
+
+                    // return value is json array [{.....},{.....}]
+                    // its like for loop.
+                    $.each(data, function (index, record) {
+                        var row = '<tr> <td>' + record.ProductId + '</td> <td>' + record.ProductName + '</td> <td>' + record.ProductPrice + '</td> </tr>'
+
+                        $('#productTable').append(row);
+                    });
+                }
+            });
+        };
+
+        function AddProduct()
+        {
+            var url = "https://localhost:44321/api/product";
+
+            var pid = $('#txtPid').val();
+            var pname = $('#txtPName').val();
+            var cost = $('#txtPrice').val();
+
+            var product = { ProductId: pid, ProductName: pname, ProductPrice: cost}
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data: JSON.stringify(product),
+                success: function(){
+                            LoadProductDetails();
+                        },
+                error: function(jqxhr){
+                            alert("error: "+jqxhr.status+" : "+jqxhr.statusText);
+                        }
+            });
+        }
+
+    function GetProduct()
+    {
+        var pid = $('#textId').val();
+
+        var url = "https://localhost:44321/api/product/" + pid;
+
+        $.ajax({
+            url: url,
+            dataType: 'json',
+            type: 'GET',
+            success: function (data) {
+
+                $('#product').empty();
+
+                var headerrow = '<tr><th> ProductId </th> <th> ProductName </th> <th> Price </th> </tr>'
+
+                $('#product').append(headerrow);
+
+                var row = '<tr> <td>' + data.ProductId + '</td> <td>' + data.ProductName + '</td> <td>' + data.ProductPrice + '</td> </tr>'
+
+                $('#product').append(row);
+            },
+            error: function (jqxhr) {
+                alert("error: " + jqxhr.status + " : " + jqxhr.statusText);
+            }
+        });
+    }
+
+    function UpdateProduct() {
+
+        var pid = $('#textPid').val();
+
+        var url = "https://localhost:44321/api/product/" + pid;
+
+        var pname = $('#textPName').val();
+        var cost = $('#textPrice').val();
+
+        var product = { ProductId: pid, ProductName: pname, ProductPrice: cost }
+
+        $.ajax({
+            type: "PUT",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: JSON.stringify(product),
+            success: function () {
+                LoadProductDetails();
+            },
+            error: function (jqxhr) {
+                alert("error: " + jqxhr.status + " : " + jqxhr.statusText);
+            }
+        });
+    }
+
+    function DeleteProduct()
+    {
+        var pid = $('#textId2').val();
+
+        var url = "https://localhost:44321/api/product/" + pid;
+
+        $.ajax({
+            url: url,
+            dataType: 'json',
+            type: 'DELETE',
+            success: function (data) {
+                LoadProductDetails();
+                alert("Successfully deleted");
+            },
+            error: function (jqxhr) {
+                alert("error: " + jqxhr.status + " : " + jqxhr.statusText);
+            }
+        });
+    }
+
+</script>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3 style="text-align:center;">
+        Default-html
+    </h3>
+    
+    <div>
+        <h4>
+            Display Poduct
+        </h4>
+        <table id="productTable"></table>
+    </div>
+
+    <script>
+        $(document).ready(LoadProductDetails());
+
+        function LoadProductDetails()
+        {
+            var url = "https://localhost:44321/api/product";
+
+            $.ajax({
+                url: url,
+                dataType: 'json',
+                type: 'GET',
+                success: function (data) {
+
+                    // clears table if data exists
+                    $('#productTable').empty();
+
+                    // add head row
+                    var headerrow = '<tr><th> ProductId </th> <th> ProductName </th> <th> Price </th> </tr>'
+
+                    $('#productTable').append(headerrow);
+
+                    // return value is json array [{.....},{.....}]
+                    // its like for loop.
+                    $.each(data, function (index, record) {
+                        var row = '<tr> <td>' + record.ProductId + '</td> <td>' + record.ProductName + '</td> <td>' + record.ProductPrice + '</td> </tr>'
+
+                        $('#productTable').append(row);
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
